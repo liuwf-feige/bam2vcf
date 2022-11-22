@@ -13,7 +13,5 @@ Scripts:
 bam2vcf_amplicon.pl is for amplicon sequencing data while bam2vcf_genome.pl is for whole genome sequencing data. For bam2vcf_amplicon.pl, a primers information file is needed as follow:
 
 Chrom	ForwardStart(0-base)	ForwardEnd(1-base)	ReverseStart(0-base)	ReverseEnd(1-base)
-
 NC_000962	6042	6067	6240	6264
-
 NC_000962	6445	6468	6654	6677
