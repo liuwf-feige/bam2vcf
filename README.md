@@ -8,3 +8,10 @@ The Perl script bam2vcf detects variants using bam file with strict filtering co
 
 Findings:
 Using Illumina whole-exome data of HG002 and its high-confidence variant calls from GIAB as benchmark data, variants identified by our pipeline (called bam2vcf), gatk and varscan2 were compared. The F1 score, accuracy, and positive predictive value were higher in bam2vcf than in gatk and varscan2 when the alternative AF was ≥5% and alternative allele depth was ≥3X. 
+
+Scripts:
+bam2vcf_amplicon.pl is for amplicon sequencing data while bam2vcf_genome.pl is for whole genome sequencing data. For bam2vcf_amplicon.pl, a primers information file is needed as follow:
+
+#Chrom	ForwardStart(0-base)	ForwardEnd(1-base)	ReverseStart(0-base)	ReverseEnd(1-base)
+NC_000962	6042	6067	6240	6264
+NC_000962	6445	6468	6654	6677
